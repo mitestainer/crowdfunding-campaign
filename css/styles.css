@@ -1,5 +1,5 @@
 /*****************************
-  BASE SETUP
+BASE SETUP
 *****************************/
 
 html {
@@ -12,5 +12,111 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale; /* smoother rendering of fonts */
+  -moz-osx-font-smoothing: grayscale; /* smoother rendering of fonts */
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+  background-color: #f1f1f1;
+}
+.container {
+  width: 658px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px -10px #cfcfcf;
+}
+img {
+  display: flex;
+  max-width: 100%;
+}
+.box {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+.middle {
+  display: flex;
+  align-items: flex-end;
+  background-color: #f9f9f9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.middle h1 {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #2c2c2c;
+}
+.middle p {
+  margin-left: 22px;
+  font-size: 14px;
+  color: #9b9b9b;
+  letter-spacing: 0.7px;
+}
+.bottom {
+  display: flex;
+  padding-top: 20px;
+  background-color: #fff;
+}
+.bottom p {
+  margin: 20px 0;
+  color: #9b9b9b
+}
+.bottom > div > p {
+  font-size: 14px;
+}
+.value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c2c2c;
+}
+.progress {
+  flex: 1;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.bar {
+  display: inherit;
+  flex-direction: column;
+  flex: 1 0 50%;
+}
+.progress p {
+  margin: 0;
+}
+progress {
+  margin: 20px 0 10px 0;
+  background-color: #f1f1f1;
+  height: 10px;
+  border-radius: 5px;
+  border: 0;
+}
+progress::-webkit-progress-bar {
+  background-color: #2cde73;
+  border-radius: 5px;
+}
+progress::-moz-progress-bar {
+  background-color: #2cde73;
+  border-radius: 5px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 50%;
+  align-items: center;
+}
+.buttons a {
+  background-color: #2cde73;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  letter-spacing: 0.75px;
+}
+.buttons a:nth-last-child(1) {
+  background-color: #cfcfcf;
 }
